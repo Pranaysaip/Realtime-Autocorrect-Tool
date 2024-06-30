@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocorrect Tool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Autocorrect Tool</h1>
+        <div class="text-container">
+            <textarea id="inputText" placeholder="Start typing..."></textarea>
+            <textarea id="outputText" placeholder="Corrected text will appear here..." readonly></textarea>
+        </div>
+    </div>
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch">
+        <label for="theme-switch"></label>
+    </div>
+</body>
+</html>
